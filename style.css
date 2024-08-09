@@ -12,7 +12,7 @@ main {
 }
 main #background_desktop {
   height: 100%;
-  width: 25%;
+  width: 30%;
   position: fixed;
   z-index: -2;
 }
@@ -46,27 +46,32 @@ label {
 }
 
 #btn_confirm {
+  width: 55%;
   background: hsl(278, 68%, 11%);
   color: hsl(0, 0%, 100%);
   padding: 10px 100px;
   border-radius: 10px;
+  margin-bottom: 30px;
 }
 
 #btn_continue {
+  width: 55%;
   background: hsl(278, 68%, 11%);
   color: hsl(0, 0%, 100%);
   padding: 10px 100px;
   border-radius: 10px;
+  margin-bottom: 30px;
 }
 
 #card_front {
   color: hsl(0, 0%, 100%);
-  width: 500px;
+  width: 350px;
   position: absolute;
   top: 20%;
-  left: 10%;
+  left: 8%;
 }
 #card_front #bg_card_front {
+  width: 100%;
   z-index: -1;
 }
 #card_front #card_front_info {
@@ -76,40 +81,45 @@ label {
 }
 #card_front #card_front_info #card_logo {
   padding: 20px;
+  width: 50px;
 }
 #card_front #card_front_info #card_number {
   position: absolute;
-  bottom: -90px;
-  font-size: 30px;
+  bottom: -60px;
+  font-size: 25px;
   width: 400px;
-  letter-spacing: 5px;
-  padding-left: 40px;
+  letter-spacing: 3px;
+  padding-left: 25px;
 }
 #card_front #card_front_info #card_info {
   position: absolute;
-  bottom: -120px;
+  bottom: -100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 350px;
-  padding-left: 40px;
+  width: 300px;
+  padding-left: 20px;
   text-transform: uppercase;
 }
 
 #card_back {
+  width: 350px;
   position: absolute;
-  top: 80%;
+  top: 58%;
   left: 15%;
   color: hsl(0, 0%, 100%);
 }
 #card_back #bg_card_back {
+  width: 100%;
   position: absolute;
   z-index: -1;
 }
 #card_back #card_cvc {
+  width: 85%;
+  text-align: right;
   position: absolute;
-  bottom: -127px;
-  left: 365px;
+  bottom: -103px;
+  letter-spacing: 2px;
   z-index: 10;
   display: flex;
   flex-direction: column;
@@ -119,13 +129,20 @@ label {
   width: 50%;
   position: relative;
   margin: auto;
-  padding: 200px 0 0 700px;
+  padding: 200px 0 0 500px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: start;
+  font-size: 15px;
+}
+#card_input input {
+  height: 30px;
+  border-radius: 10px;
+  padding-left: 10px;
 }
 #card_input .input_text {
+  width: 55%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -133,14 +150,18 @@ label {
   line-height: 30px;
   margin-bottom: 20px;
 }
+#card_input #cvc_label {
+  margin-left: 20px;
+}
 
 #card_confirm {
   display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40%;
+  width: 50%;
   margin: auto;
+  padding: 200px 0 0 700px;
 }
 #card_confirm #icon_complet {
   width: 50px;

@@ -2,15 +2,26 @@
     width: 50%;
     position: relative;
     margin: auto;
-    padding: 200px 0 0 700px;
+    padding: 200px 0 0 500px;
     @include flex-start-column;
     align-items: start;
+    font-size: 15px;
 
+    input {
+        height: 30px;
+        border-radius: 10px;
+        padding-left: 10px;
+    }
     .input_text {
+        width: 55%;
         @include flex-center-column;
         text-transform: uppercase;
         line-height: 30px;
         margin-bottom: 20px;
     }
 
+    #cvc_label {
+        margin-left: 20px;
+    }
+    
 }

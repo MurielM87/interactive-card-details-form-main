@@ -1,11 +1,12 @@
 #card_front {
   color: $white;
-  width: 500px;
+  width: 350px;
   position: absolute;
   top: 20%;
-  left: 10%;
+  left: 8%;
 
   #bg_card_front {
+    width: 100%;
     z-index: -1;
   }
 
@@ -16,23 +17,24 @@
 
     #card_logo {
       padding: 20px;
+      width: 50px;
     }
 
     #card_number {
       position: absolute;
-      bottom: -90px;
-      font-size: 30px;
+      bottom: -60px;
+      font-size: 25px;
       width: 400px;
-      letter-spacing: 5px;
-      padding-left: 40px;
+      letter-spacing: 3px;
+      padding-left: 25px;
     }
 
     #card_info {
       position: absolute;
-      bottom: -120px;
+      bottom: -100px;
       @include flex-space-row;
-      width: 350px;
-      padding-left: 40px;
+      width: 300px;
+      padding-left: 20px;
       text-transform: uppercase;
     }
   }

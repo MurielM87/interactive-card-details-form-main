@@ -23,10 +23,10 @@
         <img src="./images/bg-card-front.png" alt="background card front" id="bg_card_front">
         <div id="card_front_info">
           <img src="./images/card-logo.svg" alt="card_logo" id="card_logo">
-          <div id="card_number">0000 0000 0000 0000</div>
+          <div id="card_number"><span>0000 0000 0000 0000</span></div>
           <div id="card_info">
-            <div id="card_name">Jane Appleseed</div>
-            <div id="card_date"> 00/00</div>
+            <div id="card_name"><span>Jane Appleseed</span></div>
+            <div id="card_date"><span> 00</span>/<span>00</span></div>
           </div>
         </div>
       </section>
@@ -47,7 +47,7 @@
       <div>
         <div id="label">
           <label for="number">Exp. Date (MM/YY)</label>
-          <label for="number">CVC</label>
+          <label for="number" id="cvc_label">CVC</label>
         </div>
         <div id="input">
           <input type="text" placeholder="MM" id="text_monat">
@@ -72,6 +72,7 @@
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 
 </html>

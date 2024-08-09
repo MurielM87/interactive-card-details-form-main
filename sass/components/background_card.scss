@@ -3,7 +3,7 @@ main {
 
   #background_desktop {
     height: 100%;
-    width: 25%;
+    width: 30%;
     position: fixed;
     z-index: -2;
     @media screen and (max-width: map-get($breakpoints, mobile)) {
