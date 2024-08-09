@@ -1,0 +1,17 @@
+@import "bases/normalize.scss";
+
+@import "utils/responsive.scss";
+@import "utils/mixins.scss";
+@import "utils/variables.scss";
+
+@import "layout/footer.scss";
+
+@import "components/background_card.scss";
+@import "components/label_input.scss";
+@import "components/btn_confirm.scss";
+@import "components/btn_continue.scss";
+
+@import "pages/card_front.scss";
+@import "pages/card_back.scss";
+@import "pages/card_input.scss";
+@import "pages/card_confirm.scss";
