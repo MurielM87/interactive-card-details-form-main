@@ -1,0 +1,13 @@
+#messages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.error-message {
+    color: red;
+    font-size: 13px;
+    margin-bottom: 10px;
+    display: none;
+}

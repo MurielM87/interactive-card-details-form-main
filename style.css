@@ -1,4 +1,11 @@
 @import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -27,6 +34,10 @@ main #background_mobile {
 @media screen and (max-width: 375px) {
   main #background_mobile {
     display: flex;
+    position: fixed;
+    z-index: -2;
+    width: 100vw;
+    height: 200px;
   }
 }
 
@@ -44,6 +55,11 @@ label {
 #input #text_year {
   width: 50px;
 }
+@media screen and (max-width: 375px) {
+  #input #text_cvc {
+    width: 36%;
+  }
+}
 
 #btn_confirm {
   width: 55%;
@@ -53,6 +69,11 @@ label {
   border-radius: 10px;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 375px) {
+  #btn_confirm {
+    width: 95%;
+  }
+}
 
 #btn_continue {
   width: 55%;
@@ -60,7 +81,25 @@ label {
   color: hsl(0, 0%, 100%);
   padding: 10px 100px;
   border-radius: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 130px;
+}
+@media screen and (max-width: 375px) {
+  #btn_continue {
+    width: 95%;
+  }
+}
+
+#messages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.error-message {
+  color: red;
+  font-size: 13px;
+  margin-bottom: 10px;
+  display: none;
 }
 
 #card_front {
@@ -69,6 +108,13 @@ label {
   position: absolute;
   top: 20%;
   left: 8%;
+}
+@media screen and (max-width: 375px) {
+  #card_front {
+    width: 75%;
+    top: 15%;
+    left: 6%;
+  }
 }
 #card_front #bg_card_front {
   width: 100%;
@@ -91,6 +137,14 @@ label {
   letter-spacing: 3px;
   padding-left: 25px;
 }
+@media screen and (max-width: 375px) {
+  #card_front #card_front_info #card_number {
+    font-size: 18px;
+    padding-left: 10px;
+    margin-bottom: 25px;
+    width: 220px;
+  }
+}
 #card_front #card_front_info #card_info {
   position: absolute;
   bottom: -100px;
@@ -101,6 +155,14 @@ label {
   padding-left: 20px;
   text-transform: uppercase;
 }
+@media screen and (max-width: 375px) {
+  #card_front #card_front_info #card_info {
+    font-size: 12px;
+    width: 210px;
+    margin-bottom: 45px;
+    padding-left: 10px;
+  }
+}
 
 #card_back {
   width: 350px;
@@ -108,6 +170,13 @@ label {
   top: 58%;
   left: 15%;
   color: hsl(0, 0%, 100%);
+}
+@media screen and (max-width: 375px) {
+  #card_back {
+    width: 75%;
+    top: 5%;
+    left: 20%;
+  }
 }
 #card_back #bg_card_back {
   width: 100%;
@@ -124,6 +193,11 @@ label {
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 375px) {
+  #card_back #card_cvc {
+    bottom: -74px;
+  }
+}
 
 #card_input {
   width: 50%;
@@ -136,10 +210,17 @@ label {
   align-items: start;
   font-size: 15px;
 }
+@media screen and (max-width: 375px) {
+  #card_input {
+    width: 95%;
+    padding: 300px 0 0 0;
+  }
+}
 #card_input input {
   height: 30px;
   border-radius: 10px;
   padding-left: 10px;
+  margin-bottom: 5px;
 }
 #card_input .input_text {
   width: 55%;
@@ -148,7 +229,11 @@ label {
   justify-content: center;
   text-transform: uppercase;
   line-height: 30px;
-  margin-bottom: 20px;
+}
+@media screen and (max-width: 375px) {
+  #card_input .input_text {
+    width: 100%;
+  }
 }
 #card_input #cvc_label {
   margin-left: 20px;
@@ -161,7 +246,13 @@ label {
   align-items: center;
   width: 50%;
   margin: auto;
-  padding: 200px 0 0 700px;
+  padding: 200px 0 0 560px;
+}
+@media screen and (max-width: 375px) {
+  #card_confirm {
+    width: 95%;
+    padding: 450px 0 0 0;
+  }
 }
 #card_confirm #icon_complet {
   width: 50px;

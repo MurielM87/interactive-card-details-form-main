@@ -5,7 +5,11 @@
     align-items: center;
     width: 50%;
     margin: auto;
-    padding: 200px 0 0 700px;
+    padding: 200px 0 0 560px;
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+        width: 95%;
+        padding: 450px 0 0 0;
+    }
 
     #icon_complet {
         width: 50px;

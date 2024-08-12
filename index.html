@@ -39,11 +39,13 @@
       <div class="input_text">
         <label for="text">Cardholder Name</label>
         <input type="text" placeholder="e.g. Jane Appleseed">
+        <span class="error-message" id="error-name"></span>
       </div>
       <div class="input_text">
         <label for="number">Card Number</label>
         <input type="text" name="" id="" placeholder="e.g. 1234 5678 9123 0000">
       </div>
+      <span class="error-message" id="error-number"></span> 
       <div>
         <div id="label">
           <label for="number">Exp. Date (MM/YY)</label>
@@ -53,6 +55,10 @@
           <input type="text" placeholder="MM" id="text_monat">
           <input type="text" name="" id="text_year" placeholder="YY">
           <input type="text" placeholder=" e.g. 123" id="text_cvc">
+          <div id="messages">
+            <span class="error-message" id="error-date"></span>
+          <span class="error-message" id="error-cvc"></span> 
+          </div>          
         </div>
       </div>
       <button id="btn_confirm">Confirm</button>

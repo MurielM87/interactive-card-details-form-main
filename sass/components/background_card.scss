@@ -15,6 +15,10 @@ main {
     display: none;
     @media screen and (max-width: map-get($breakpoints, mobile)) {
       display: flex;
+      position: fixed;
+      z-index: -2;
+      width: 100vw;
+      height: 200px;
     }
   }
 }

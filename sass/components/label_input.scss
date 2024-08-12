@@ -15,4 +15,11 @@ label {
   #text_year {
     width: 50px;
   }
+
+  #text_cvc {
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+      width: 36%;
+    }
+  }
+
 }

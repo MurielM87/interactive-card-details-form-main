@@ -4,6 +4,11 @@
   position: absolute;
   top: 20%;
   left: 8%;
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    width: 75%;
+    top: 15%;
+    left: 6%;
+  }
 
   #bg_card_front {
     width: 100%;
@@ -27,6 +32,12 @@
       width: 400px;
       letter-spacing: 3px;
       padding-left: 25px;
+      @media screen and (max-width: map-get($breakpoints, mobile)) {
+        font-size: 18px;
+        padding-left: 10px;
+        margin-bottom: 25px;
+        width: 220px;
+      }
     }
 
     #card_info {
@@ -36,6 +47,12 @@
       width: 300px;
       padding-left: 20px;
       text-transform: uppercase;
+      @media screen and (max-width: map-get($breakpoints, mobile)) {
+        font-size: 12px;
+        width: 210px;
+        margin-bottom: 45px;
+        padding-left: 10px;
+      }
     }
   }
 }
