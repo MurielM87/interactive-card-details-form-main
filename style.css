@@ -69,6 +69,10 @@ label {
   border-radius: 10px;
   margin-bottom: 30px;
 }
+#btn_confirm:hover {
+  background-color: hsl(270, 3%, 87%);
+  cursor: pointer;
+}
 @media screen and (max-width: 375px) {
   #btn_confirm {
     width: 95%;
@@ -83,6 +87,10 @@ label {
   border-radius: 10px;
   margin-bottom: 130px;
 }
+#btn_continue:hover {
+  background-color: hsl(270, 3%, 87%);
+  cursor: pointer;
+}
 @media screen and (max-width: 375px) {
   #btn_continue {
     width: 95%;
@@ -92,14 +100,17 @@ label {
 #messages {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
 
 .error-message {
-  color: red;
+  color: hsl(0, 100%, 66%);
   font-size: 13px;
   margin-bottom: 10px;
   display: none;
+}
+
+#error-cvc {
+  margin-left: 20px;
 }
 
 #card_front {
@@ -126,13 +137,13 @@ label {
   z-index: 10;
 }
 #card_front #card_front_info #card_logo {
-  padding: 20px;
+  margin: 20px;
   width: 50px;
 }
 #card_front #card_front_info #card_number {
   position: absolute;
   bottom: -60px;
-  font-size: 25px;
+  font-size: 22px;
   width: 400px;
   letter-spacing: 3px;
   padding-left: 25px;
@@ -200,10 +211,10 @@ label {
 }
 
 #card_input {
-  width: 50%;
+  width: 100%;
   position: relative;
   margin: auto;
-  padding: 200px 0 0 500px;
+  padding: 200px 0 0 620px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -240,13 +251,14 @@ label {
 }
 
 #card_confirm {
+  position: relative;
   display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 100%;
   margin: auto;
-  padding: 200px 0 0 560px;
+  padding: 200px 0 0 620px;
 }
 @media screen and (max-width: 375px) {
   #card_confirm {

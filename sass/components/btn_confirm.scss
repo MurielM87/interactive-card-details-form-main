@@ -5,6 +5,10 @@
     padding: 10px 100px;
     border-radius: 10px;
     margin-bottom: 30px;
+    &:hover {
+        background-color: $light_grayish_violet;
+        cursor: pointer;
+    }
     @media screen and (max-width: map-get($breakpoints, mobile)) {
         width: 95%;
     }

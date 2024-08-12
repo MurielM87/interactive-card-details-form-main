@@ -1,13 +1,14 @@
 #messages {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-
 }
 
 .error-message {
-    color: red;
+    color: $red;
     font-size: 13px;
     margin-bottom: 10px;
     display: none;
+}
+#error-cvc {
+    margin-left: 20px;
 }
